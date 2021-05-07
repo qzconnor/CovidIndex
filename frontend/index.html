@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germany | Simple Covid Index</title>
+    <meta name="description" content="Covid Index for Germany">
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon-simpleCoronaIndex.png">
+    <script src="https://kit.fontawesome.com/bbb45cb41a.js" crossorigin="anonymous"></script>
+</head>
+<body ng-app="examples">
+
+    <div class="container-fluid wrapper" id="datasite">
+            
+       <div class="row">
+        <div class="col-12 col-md-8 section-left">
+            <div class="row section-top">
+        
+                <div class="col-12 col-md-5 flexalign">
+                    <div class="data-box-index">
+                        <div class="row">
+                           <div class="col text-center">
+                            <h1 id="index">00.00</h1>
+                           </div>
+                           
+                        </div>  
+                        <div class="row index-text">
+                            <div class="col text-center" >
+                                <hr style="background-color: white;">
+                            <p> Latest # of infections per 100.000 </p>
+                            </div>
+                           
+                        </div>  
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-md-6 titlecol">
+                    <div class="title">
+                        <div class="row">
+                           <div class="col-6 col-md-12 text-center headerField">
+                                <div class="insec">
+                                    <label for="city">COVID-19 Data for</label>
+                                    <div class="row-fluid">
+                                        <select class="selectpicker" data-show-subtext="false" data-live-search="true" id="select"></select>
+                                    </div>
+                                </div>
+                                <hr style="background-color: white;">
+                           </div>
+                        </div>
+                       
+                        <div class="row social">
+                            <div class="col-6 col-md-6">
+                                <a href="https://github.com/apocalyps0" target="_blank"><i class="far fa-user"></i> / apoc</a>
+                            </div>
+                            <div class="col-6 col-md-6 text-right">
+                                <span id="time"></span> / <i class="far fa-clock"></i>
+                            </div>
+                        </div>
+                        <div class="row social">
+                            <div class="col-sm">
+                             <a href="https://github.com/qzconnor" target="_blank"><i class="far fa-user"></i> / xConnorTV</a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-bottom">
+               <div class="col-12 col-md-12 chartal">
+                <canvas id="myChart" width="400" height="203"></canvas>
+               </div>
+            </div>
+        </div>
+      
+        <div class="col-12 col-md-4 section-right">
+            <div class="data-box">
+                <h2>Data List</h2>
+                <div class="wrap" id="table">
+                    <div class="row data-legend data text-center">
+                        <div class="col date box-data">
+                            <span title="Date">Date</span>
+                        </div>
+                        <div class="col box-data">
+                            <span title="Increased Cases">Cases</span>
+                        </div>  
+                        <div class="col PerSex box-data">
+                            <span title="Increased Cases">M / F - Ratio</span>
+                        </div>
+                    </div>
+                    <div id="data-table">
+
+                    </div>
+            </div>
+        </div>
+        </div>
+       </div>
+    
+  </div>
+    
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+    <script src="./js/controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="./js/chart.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+</body>
+</html>

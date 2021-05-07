@@ -1,0 +1,175 @@
+.wrapper{
+    height: 100vh;
+}
+
+.section-right h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+.section-bottom{
+    border-radius: 5px;
+    margin: 15px;
+    -webkit-box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.94); 
+    box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.94);
+    background-color: #1c1c1c;
+}
+.title h1{
+    font-size: 45px;
+}
+
+.flexalign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: initial;
+}
+.titlecol, .chartal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: initial;
+}
+.social{
+    font-size: 15px;
+}
+.social a:active{
+    color: white;
+}
+.social a:link{
+    color: white;
+}
+.social a:visited {
+    color: white;
+}
+.data-box-index{
+    width: 100%;
+    margin: 15px;
+    padding: 0 25px 0 25px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.94); 
+    box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.94);
+}
+#index{
+    font-size: 120px;
+}
+.index-text{
+    justify-content: center;
+}
+
+.data-box{
+    margin: 15px 38px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.94); 
+    box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.94);
+    overflow-y: scroll;
+    height: 96.6vh;
+}
+.data{
+    margin: 0 15px 8px 15px;
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.94); 
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.94);
+    display: inline-flexbox;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: white
+}
+.caseC span{
+    color :rgba(54, 162, 235, 1);
+}
+
+.form-control{
+    display: inline;
+}
+
+.intitle{
+    font-size: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+    .data-box-index{
+        margin-bottom: 15px;
+    }
+    .progress-bar span{
+        font-size: 9px;
+    }
+    .section-top{
+        margin-top: 15px;
+        margin-bottom: 65px;
+    }
+    .data-box{
+        margin: 0;
+        overflow-y: unset;
+        height: 100%;
+    }
+    .section-bottom {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .data-box-index {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .headerField{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .insec label{
+        font-size: 35px;
+    }
+    .bs-searchbox .form-control {
+        height: 35px;
+    }
+}
+@media only screen and (max-width: 450px) {
+  
+    #index{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 800px) {
+  
+    .headerField{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .section-top{
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+  .section-left, .flexalign, .titlecol, .section-right{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+    .insec label{
+        font-size: 30px;
+    }
+  }
+  @media only screen and (min-width: 1700px) {
+    .insec label{
+        font-size: 40px;
+    }
+  }
